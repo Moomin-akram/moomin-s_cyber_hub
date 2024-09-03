@@ -1,0 +1,700 @@
+
+      <!DOCTYPE html>
+<html>
+<head>
+    <title>Moomin's Cyber Hub</title>
+    <style>
+  
+  
+  
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(-100deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 13s ease infinite;
+            color: white;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 0px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 5px 9px rgba(0, 0, 0, 0.5);
+        }
+        .menu-dots {
+            position: absolute;
+            right: 10px;
+            top: 23px;
+            cursor: pointer;
+        }
+        .menu-dots div {
+            width: 28px;
+            height: 4px;
+            background-color: white;
+            margin: 4px 0;
+        }
+        .menu {
+            display: none;
+            position: absolute;
+            right: 8px;
+            top: 9px;
+            background: black;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+        .menu a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        .menu a:hover {
+            background-color: yellow;
+        }
+        .content {
+            padding: 10px;
+            padding-top: 20%; /* Adjust this value to match the height of the header */
+            display: none;
+        }
+        .content.visible {
+            display: block;
+        }
+        .page-container {
+            background-color: rgba(0, 0, 0, 0.8);
+            margin: 20px auto;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+        }
+        .page h2 {
+            color: yellow;
+        }
+        .dots-container {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .dot {
+            height: 20px;
+            width: 20px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+        .dot.active {
+            background-color: yellow;
+        }
+        .paragraph {
+            display: none;
+        }
+        .paragraph.visible {
+            display: block;
+            background-image: url("file:///storage/emulated/0/cyber/Li.png");
+          background-imageheight: 20px;
+        }
+        .home-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 3px;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+        .home-button:hover {
+            background-color: ;
+        }
+  
+  
+  
+    </style>
+
+</head>
+<body>
+      
+    <div class="header">
+        <h2>Moomin's Cyber Hub</h2>
+        <div class="menu-dots" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="menu" id="menu">
+            <a href="#" onclick="showContent('home')">Home</a>
+            <a href="#" onclick="showContent('about')">About the Developer</a>
+            <a href="#" onclick="showContent('contact')">Contact Us</a>
+            <a href="#" onclick="showContent('plz')">About the Website</a>
+        </div>
+    </div>
+ 
+    <div class="content visible" id="home">
+        <div class="page-container">
+            <p>
+                <b>
+                    Developer: Moomin Akram<br/>
+                    Address: 193224
+                </b>
+            </p>
+            <table border="1" align="centre">
+                <tr>
+                    <td>
+                      
+                     
+                        <div class="dots-container">
+                            <span class="dot active" onclick="showParagraph(0)"></span>
+                            <span class="dot" onclick="showParagraph(1)"></span>
+                            <span class="dot" onclick="showParagraph(2)"></span>
+                        </div>
+                      
+                      <center>
+                        ^<br/>          
+                        |<br/>
+                      (tap) 
+                      </center>
+                        <h1 align="center"><u>What is Cyber Security?</u></h1>
+                    </td>
+                </tr>
+            </table>
+          <br/><br/>
+            <marquee height="30" width="100%" loop="" bgcolor="red"><b>You are welcome in Moomins Cyber Hub</b></marquee>
+            <div id="paragraphs">
+                <p class="paragraph visible">
+                  
+                 Cyber security is the protection of Internet-connected systems, including hardware, software, and data from cyber attacks.<br/><br/>
+                  It is made up of two words one is cyber and other is security.<br/><br/>
+               ☆  Cyber is related to the technology which contains systems, network and programs or data.<br/><br/>
+              ☆  Whereas security related to the protection which includes systems security, network security and application and information security. <br/><br/>
+                  
+                </p>
+                <p class="paragraph">
+                  
+                 Cyber security is the body of technologies, processes, and practices designed to protect networks, computers, programs and data from attack, damage or unauthorized access.<br/><br/>
+                 ☆ The term cyber security refers to techniques and practices designed to protect digital data <br/><br/>
+                 ☆ The data that is stored, transmitted or used on an information system.
+                    
+             
+                </p>
+                <p class="paragraph">
+                  
+                  
+                  "Cyber security is primarily about people, processes, and technologies working together to encompass the full range of threat reduction, vulnerability reduction, deterrence, international engagement, incident response, resiliency, and recovery policies and activities, including computer network operations, information assurance, law enforcement, etc."
+                  
+                  
+                </p>
+            </div>
+             
+              
+                
+        </div>
+    </div>
+
+    <div class="content" id="about">
+        <div class="page-container">
+            <h2 align="center"><u>About the Developer</u></h2>
+          
+          
+            <p align="justify">The developer of this website is Moomin Akram.He is learning ethical hacking and he is a professional programmer.He is a citizen of India and is studying in 9th class
+              in Bright Carrier Institude in Villagam.By this website he want to make this world awear about cyber security.<br/><br/>some of his images are listed below:-<br/></br>
+                
+                  <img src="file:///storage/emulated/0/cyber/moomin1.jpg"  height="100%" width="100%" alt="moomin" align="left"/>
+          
+               birth date:- 9/2/2009
+      
+                <br/>
+                
+               
+                <img src="file:///storage/emulated/0/cyber/moomin3.jpg"  height="100%" width="100%" alt="moomin" align="left"
+                  
+                  />
+              <p align="left">studying in:- 9th class</p>
+           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <br/><br/>
+               
+               
+             To know more about him contact with him
+              </p>  
+          
+               
+          
+          
+        </div>
+    </div>
+
+    <div class="content" id="contact">
+        <div class="page-container">
+            <h2 align="center"><u>Lets Get in Touch</u></h2>
+          <p align="left">
+                
+               
+                if you want to learn ethical hacking or programming you can contact with us for an excellent guide line.<br/><br/>
+            You can contact us on the following sources:<br/><br/>
+              
+              <a href="http://www.youtube.com/@Lyrics-hub-220" target="_self">
+                <img src="file:///storage/emulated/0/cyber/talagram.png"  height="90" width="90" alt="tap to follow us on talagram" align="right"/>
+                <a/>
+                 <a href="mailto:lyrics.hub.220@gmail.com">
+                   
+                 <img src="file:///storage/emulated/0/cyber/email.png"  height="90" width="90" alt="tap to send us a mail" align="right"/>
+                 </a>
+                <a href="http://https://www.instagram.com/__hackers__hub?igsh=YzljYTk1ODg3Zg==" target="_self">
+                <img src="file:///storage/emulated/0/cyber/tala.png"  height="90" width="90" alt="tap to follow us on instagram" align="right"/>
+                </a>
+                <br/></br><br/></br>
+            
+                
+              </p>
+        </div>
+    </div>
+
+    <div class="content" id="plz">
+        <div class="page-container">
+            <h2 align="center"><u>About the Website</u></h2>
+            <p align="justify">If you have entered in this website then you have awear about the cyber crimes.
+              These crimes are spreading over a very fast speed in this world so to make people aware about 
+              cyber security there are n number of websites and platforms but all those platforms are teaching by there own way
+              and also this website will tough you in my way the basics of cyber security but this way is smooth and easy to understand.<br/><br/>
+              <img src="file:///storage/emulated/0/cyber/hot.png"  height="100%" width="100%" alt="moomin" />
+          
+            </p>
+        </div>
+    </div>
+
+    <div class="content" id="additional-pages">
+        <div class="page-container">
+            <h2>Additional Pages</h2>
+            <div class="page visible" id="page1">
+                <h3>Page 1</h3>
+                <p>Content for Page 1</p>
+            </div>
+            <div class="page" id="page2">
+                <h3>Page 2</h3>
+                <p>Content for Page 2</p>
+            </div>
+            <!-- Add more pages as needed -->
+        </div>
+    </div>
+
+    <button class="home-button" onclick="showContent('home')">  
+       <a href="moominscyberhub.html" target="_parent">
+       
+                <img src="file:///storage/emulated/0/cyber/up.png"  height="50" width="50" alt="computer image" align="left"/>
+       </a>
+               </button>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function showContent(contentId) {
+            var contents = document.getElementsByClassName('content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].classList.remove('visible');
+            }
+            document.getElementById(contentId).classList.add('visible');
+            toggleMenu();
+        }
+
+        function showParagraph(index) {
+            var paragraphs = document.getElementsByClassName('paragraph');
+            for (var i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].classList.remove('visible');
+            }
+            paragraphs[index].classList.add('visible');
+            
+            var dots = document.getElementsByClassName('dot');
+            for (var i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('active');
+            }
+            dots[index].classList.add('active');
+        }
+    </script>
+
+        
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById('menu');
+            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function showContent(contentId) {
+            var contents = document.getElementsByClassName('content');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].classList.remove('visible');
+            }
+            document.getElementById(contentId).classList.add('visible');
+            toggleMenu();
+        }
+
+        function showParagraph(index) {
+            var paragraphs = document.getElementsByClassName('paragraph');
+            for (var i = 0; i < paragraphs.length; i++) {
+                paragraphs[i].classList.remove('visible');
+            }
+            paragraphs[index].classList.add('visible');
+            
+            var dots = document.getElementsByClassName('dot');
+            for (var i = 0; i < dots.length; i++) {
+                dots[i].classList.remove('active');
+            }
+            dots[index].classList.add('active');
+        }
+    </script>
+  
+  <hr/>
+   <table bgcolor="">
+          <tr>
+            <td>
+              
+                <img src="file:///storage/emulated/0/cyber/yoo.jpg"  height="100" width="100" alt="computer image" align="left"/>
+              
+        <h2 align="center" ><u>  Why is cyber security important? </u>    
+               </h2>
+        
+              </td>
+            </tr>
+          </table>
+        
+        <hr/>
+        
+        <table border="0" bgcolor="" cellpadding="10" cellspacing="5">
+          <tr>
+            
+            <th>
+              <p align="justify"><b>  Listed below are the reasons why cyber security is so important in what’s become a predominant digital world:    </b>   </p>
+              
+              
+            </th>
+            
+            
+            
+            
+          </tr>
+          
+          
+          
+          
+          
+          
+          
+        </table>
+        
+        
+        
+        
+        <table border="0" bgcolor="" cellspacing="5">
+          <tr>
+            
+            <th>
+              <p align="justify"> <b> 
+                <ul>
+                  <li>
+                
+                    <p align="left"  > Cyber attacks can be extremely expensive for businesses to endure.  </p>   </p>
+                </li>
+                </ul>
+            </th>
+            
+            
+            
+            
+          </tr>
+          
+          
+          
+          
+          
+          
+          
+        </table>
+        
+        
+        <table border="0" bgcolor="" cellpadding="5" cellspacing="5">
+          <tr>
+            
+            <th>
+              <p align="justify" >  <b> 
+                <ul> 
+                  <li align="left">
+                    
+                      
+                    In addition to financial damage  suffered by the business, a data breach can also inflict untold reputational damage.</b> </p>
+                    
+                <li align="left">   Cyber-attacks these days are becoming progressively destructive. Cybercriminals are using more sophisticated ways to initiate cyber attacks.  </li>
+                </li>
+                
+                
+                
+                <li align="left"><br/>
+                  
+                  Regulations such as GDPR are forcing organizations into taking better care of the personal data they hold.
+                </li><br/>
+              </ul>
+              <p align="justify">
+              Because of the above reasons, cyber security has become an important part of the business and the focus now is on developing appropriate response plans that minimize the damage in the event of a cyber attack.<br/><br/>
+                
+                
+                But, an organization or an individual can develop a proper response plan only when he has a good grip on cyber security fundamentals.
+                
+                
+                
+                
+                
+                
+                
+                
+              </p>
+            </th>
+            
+            
+            
+            
+          </tr>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </table>
+   
+  
+      
+  <b> <hr/></b>
+  
+         <img src="file:///storage/emulated/0/cyber/Li.png"  height="90" width="90" alt="hakers" align="right"/> 
+              
+    <h2 align="center"><u>Defence from cyber crime </u></h2>
+    <hr/>
+        <table border="0" bgcolor="" cellpadding="10" cellspacing="5" align="right">
+          <tr>
+            
+            <th>
+              <p > 
+                
+                  <h3 align="left"><u>(i) Two-factor authentication:-</u></h3>
+                
+                <ul> 
+                 
+                  <li align="left">
+                  BEST WAY TO PROTECT YOUR ACCOUNT IS ADDING TWO-FACTOR AUTHENTICATION IN YOUR ACCOUNT📲. THIS REQUIRES AN EXTRA STEP IN SIGN-IN
+                    PROCESS TO VERIFY THAT YOU ARE THE USER📴. A TYPICAL TWO-FACTOR AUTHENTICATION IS TO HAVE YOU LOG IN (FIRST AUTHENTICATION) AND THEN SEND 
+                    AN ACCESS CODE TO YOUR SMARTPHONE OR YOUR EMAIL THAT YOUR HAVE ENTER TO CONTINUE (SECOND AUTHENTICATION).
+                </li> 
+                  
+                 
+                  
+                  
+                </ul>
+                
+                
+                  <h3 align="left"><u>(ii) use strong passwords:-</u></h3>
+                
+                <ul>
+                  <li align="left">
+                    THE KEY ASPECTS OF A STRONG PASSWORD ARE LENGTH (THE LONGER THE BETTER);
+                    A MIX OF LETTERS (UPPER AND LOWER CASE),NUMBERS,AND SYMBOLS,⤴⤵NO TIES TO YOUR PERSONAL INFORMATION, AND NO DICTIONARY WORDS. IF YOUR
+                    PASSWORD IS SOMETHING SIMPLE THAT CAN BE GUESSED EASILY THEN REMEMBER "SECURITY IS JUST AN ILLUSTRATION"
+                  </li>
+                </ul>
+                
+                
+                
+                 <h3 align="left"><u>(iii) be cautious with apps:-</u></h3>
+                
+                <ul>
+                  <li align=" left">
+                    JUST LIKE YOU WOULDN'T ALLOW A TOTAL STRANGER INTO YOUR HOUSE, YOU SHOULDN'T LET UNKNOWN THIRD-PARTY
+                    APPS HAVE ACCESS TO YOUR SOCIAL MEDIA🌍. THIS CAN INCLUDE POPULAR APPS
+                    BY OTHER DEVELOPERS SUCH AS SOCIAL MEDIA POST SCHEDULERS FOR BUSINESS 
+                    . ONCE YOU GIVE THEM ACCESS TO YOUR ACCOUNT,YOU LEAVE YOURSELF OPEN🎯 IF THE APP HAS BEEN DESIGNED BY A HACKER LOOKING TO TAKE 
+                    ADVANTAGE OF YOUR TRUST 
+                  </li>
+                </ul>
+                
+                
+                
+              </p>
+              
+              
+            </th>
+            
+            
+            
+            
+          </tr>
+          
+          
+          
+          
+          
+          
+          
+        </table>
+  <hr/>
+         
+  <h2 align="center"><u>about the developer</u></h3>
+        
+          <hr/>
+            
+          
+   <table border="0" bgcolor="" cellpadding="10"cellspacing="5">
+          <tr>
+            
+            <th>
+           <p align="justify">The developer of this website is Moomin Akram.He is learning ethical hacking and he is a professional programmer.He is a citizen of India and is studying in 9th class
+              in Bright Carrier Institude in Villagam.By this website he want to make this world awear about cyber security.<br/><br/>some of his images are listed below:-<br/></br>
+                
+                  <img src="file:///storage/emulated/0/cyber/moomin1.jpg"  height="100%" width="100%" alt="moomin" align="left"/>
+          
+               birth date:- 9/2/2009
+      
+                <br/>
+                  
+               
+               
+                <img src="file:///storage/emulated/0/cyber/moomin3.jpg"  height="100%" width="100%" alt="moomin" align="left"/>
+              <p align="left">studying in:- 9th class</p>
+           &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <br/>
+               
+               
+             To know more about him contact with him
+              </p>  
+          
+                
+              <hr/>
+          <h2 align="center"><u>About this Website</u></h2>
+         <hr/>
+            <p align="justify">If you have entered in this website then you have awear about the cyber crimes.
+              These crimes are spreading over a very fast speed in this world so to make people aware about 
+              cyber security there are n number of websites and platforms but all those platforms are teaching by there own way
+              and also this website will tough you in my way the basics of cyber security but this way is smooth and easy to understand.<br/><br/>
+              <img src="file:///storage/emulated/0/cyber/hot.png"  height="100%" width="100%" alt="moomin" align="left"/>
+          
+            </p>
+            <br/>
+       <hr/>      
+                      
+  <h1 align="center"><u>
+    
+    Lets get in touch
+  </u></h1>
+              <hr/>
+            
+   <table border="0" bgcolor="" cellpadding="5"cellspacing="5">
+          <tr>
+            
+            <th>
+              <p align="left">
+                
+               
+                if you want to learn ethical hacking or programming you can contact with us for an excellent guide line.<br/><br/>
+            You can contact us on the following sources:<br/><br/>
+              
+              <a href="http://www.youtube.com/@Lyrics-hub-220" target="_self">
+                <img src="file:///storage/emulated/0/cyber/talagram.png"  height="90" width="90" alt="tap to follow us on youtube" align="right"/>
+                <a/>
+                 <a href="mailto:lyrics.hub.220@gmail.com">
+                   
+                 <img src="file:///storage/emulated/0/cyber/email.png"  height="90" width="90" alt="tap to send us a mail" align="right"/>
+                 </a>
+                <a href="http://https://www.instagram.com/__hackers__hub?igsh=YzljYTk1ODg3Zg==" target="_self">
+                <img src="file:///storage/emulated/0/cyber/tala.png"  height="90" width="90" alt="tap to follow us on instagram" align="right"/>
+                </a>
+                <br/></br><br/></br>
+            
+                
+              </p>
+            
+            </th>
+            </tr>
+     </table>
+     <hr/>
+     <h1 align="center"><u>quotes</u></h1>
+     <hr/>
+     <marquee> 
+       
+       <img src="file:///storage/emulated/0/cyber/q2.png"   alt="quotes" />
+                
+       
+     </marquee>  
+     
+     
+     
+     
+     
+     <table bgcolor="black" cellpadding="83">
+       <tr>
+         <th>
+           
+           <p align="center">© 2024 moominakram,inc.</p>
+         </th>
+       </tr>
+     </table>
+     
+  
+     
+     
+     
+</body>
+          
+          
+          
+      
+</html>
+      
+  
+
+
